@@ -1,0 +1,57 @@
+
+/* ===== Giao diện phiên bản thương mại ===== */
+:root{
+  --ink:#101828; --ink-2:#344054; --muted:#667085;
+  --paper:#f5f7fb; --card:#ffffff; --line:#e4e8f0;
+  --indigo:#101a35; --brand:#3b4ff2; --brand-2:#6d5cf6; --brand-soft:#eceefe;
+  --teal:#0e9384; --teal-soft:#d7f2ee;
+  --amber:#b54708; --amber-soft:#fdf0e3;
+  --rose:#b42318; --rose-soft:#fdeceb;
+  --ok:#12805c; --ok-soft:#daf5e9;
+  --r:14px;
+  --shadow:0 1px 2px rgba(16,24,40,.05), 0 12px 32px -20px rgba(16,24,40,.45);
+}
+body{background:
+  radial-gradient(900px 420px at 100% -8%, #e8ebff 0%, transparent 62%),
+  radial-gradient(700px 380px at -10% 108%, #dff3f0 0%, transparent 60%),
+  var(--paper);
+  background-attachment:fixed;
+}
+.card{border-radius:var(--r); border-color:var(--line);
+  box-shadow:0 1px 2px rgba(16,24,40,.04), 0 16px 40px -28px rgba(16,24,40,.5);}
+.card:hover{box-shadow:0 1px 2px rgba(16,24,40,.05), 0 20px 44px -26px rgba(16,24,40,.45)}
+h1{font-weight:700; letter-spacing:-.015em}
+h2,h3{letter-spacing:-.01em}
+.btn{background:linear-gradient(180deg,var(--brand-2),var(--brand)); box-shadow:0 1px 2px rgba(16,24,40,.14); border-radius:11px}
+.btn:hover{filter:brightness(1.07); transform:translateY(-1px)}
+.btn.ghost{background:#fff; border-color:#d6dbe6; color:var(--ink); box-shadow:0 1px 2px rgba(16,24,40,.05)}
+.btn.ghost:hover{background:#f7f9fc; transform:translateY(-1px)}
+.btn.teal{background:linear-gradient(180deg,#12b39f,var(--teal))}
+.btn.amber{background:linear-gradient(180deg,#e08b3a,#b54708)}
+.btn.danger{background:linear-gradient(180deg,#e0534a,#b42318)}
+.side{background:linear-gradient(170deg,#16224a 0%,#0d1428 62%,#0b1a2c 100%); border-right:1px solid #1d2a4f}
+.side .brandline{letter-spacing:.01em}
+.nav{transition:background .15s, color .15s}
+.nav.on{background:linear-gradient(180deg,#ffffff,#eef1ff); color:#16224a; box-shadow:0 6px 18px -10px rgba(0,0,0,.6)}
+.top{background:rgba(255,255,255,.86); backdrop-filter:saturate(1.4) blur(8px); border-bottom:1px solid var(--line)}
+.kpi{border-radius:var(--r); background:linear-gradient(180deg,#ffffff,#fafbff); box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.kpi b{background:linear-gradient(90deg,var(--brand),var(--teal)); -webkit-background-clip:text; background-clip:text; color:transparent}
+.pill{border:1px solid rgba(59,79,242,.14)}
+th{background:#f4f6fb; letter-spacing:.02em; text-transform:uppercase}
+tr:hover td{background:#fafbff}
+.bar{background:#e8ecf4}
+.bar>i{background:linear-gradient(90deg,var(--brand),#12b39f)}
+.qitem{border-radius:12px; box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.qitem img{border-radius:10px}
+.opt{border-radius:10px; transition:background .12s,border-color .12s}
+.gate-box{border-radius:20px; box-shadow:0 40px 90px -40px rgba(0,0,0,.75)}
+.gate-title{background:linear-gradient(90deg,#16224a,#3b4ff2 60%,#0e9384);
+  -webkit-background-clip:text; background-clip:text; color:transparent}
+#gate{background:
+  radial-gradient(1200px 560px at 8% -12%, #2a3b86 0%, transparent 58%),
+  radial-gradient(900px 520px at 112% 112%, #0e9384 0%, transparent 55%),
+  #0d1428;}
+.timer{background:linear-gradient(180deg,#fdf0e3,#fbe3c8); border:1px solid #f0c99a}
+.log{background:#0d1428; color:#9ef2d8; border-radius:12px}
+.modal .box{border-radius:18px; box-shadow:0 40px 90px -40px rgba(0,0,0,.6)}
+#pickBar{background:linear-gradient(180deg,#1b2a55,#101a35) !important; border:1px solid #2a3a6b}
